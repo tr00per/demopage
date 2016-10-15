@@ -11,16 +11,18 @@
         }
         
         body {
-            font: 12pt sans-serif;
-            color: navy;
-            background: #FEFEFE;
+            font: 11pt "Tahoma", sans-serif;
+            color: black;
+            background: #EEE;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Strona domowa</h1></header>
+        <h1>Strona domowa</h1>
+        <div class="motto">(...) the most persistent principles of the universe were accident and error.<span class="author">The last thought of Liet Kynes</span></div>
+    </header>
     <nav>
         <ul>
             <li><a href="omnie.html">O mnie</a></li>
@@ -36,13 +38,19 @@
                     <h2>Hello, world!</h2></header>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur ipsum eget ante tincidunt, a faucibus urna luctus. Integer eleifend, tellus vitae vulputate sollicitudin, nulla libero sollicitudin eros, at cursus orci elit non sapien. <img src="https://www.fillmurray.com/110/300" alt="Fill Murray" /> Aliquam finibus mollis felis at maximus. Sed blandit, orci et tempor imperdiet, tellus urna maximus velit, eu consectetur enim arcu nec neque. Sed molestie velit mi, id ultrices mi hendrerit sit amet.</p>
                 <p>Integer lacinia in risus accumsan tempus. Suspendisse et accumsan tortor. Vivamus purus turpis, laoreet non tempus sed, placerat sed nibh. Curabitur ullamcorper rutrum lacus, vel condimentum nisl consectetur et. In congue congue aliquam. Cras maximus leo enim, faucibus tristique lacus lobortis vel. Proin mollis vestibulum nunc.</p>
-                <footer></footer>
+                <p>Cras in elit dapibus, pharetra lectus eget, cursus urna. Vivamus consequat euismod turpis sed convallis. Integer nec vehicula mi. Maecenas nibh ligula, lacinia at interdum id, hendrerit ut justo. Integer vulputate blandit est, efficitur molestie sapien convallis at. Cras ullamcorper at ex id egestas. Donec in nunc vel augue efficitur tincidunt non sed felis. Nunc eget ligula rhoncus, volutpat magna vel, efficitur mi. Morbi congue tortor et diam eleifend dignissim. Duis dapibus vitae massa at malesuada. Vivamus sit amet eros aliquam, imperdiet magna nec, vehicula ante. Vestibulum et lectus in dui congue convallis. Fusce at interdum ante, eget suscipit felis. Morbi finibus pulvinar lorem pellentesque rutrum.</p>
+                <p>Nam euismod auctor finibus. Ut semper maximus ullamcorper. Curabitur sed quam fringilla, congue velit quis, rhoncus eros. Maecenas eget arcu eget quam lobortis auctor non vel lorem. Nunc feugiat tellus et lectus tempor, eu varius mauris luctus. Pellentesque ullamcorper, tellus in viverra pretium, risus sem semper magna, eu mattis ipsum nibh ut felis. Praesent metus sapien, feugiat quis est eget, ullamcorper iaculis metus. Integer eget vestibulum massa. Morbi eu nulla mi. Nunc maximus quis dui at tempor. Integer et volutpat libero. In ut efficitur velit.</p>
+                <footer><span class=".pubdate">Opublikowane: <span class=".date">2077-10-23</span></span><span class=".tags"><span class=".tag">Foo</span><span class=".tag">Bar</span></span>
+                </footer>
             </article>
             <article id="hobby">
                 <header>
                     <h2>Działka, moje hobby</h2></header>
                 <p><img src="http://www.placecage.com/300/100" alt="Place Cage" /> Aenean eget tellus porta, congue nibh nec, vulputate nisl. Integer viverra purus nibh, vitae laoreet metus placerat eget. Sed pellentesque sollicitudin ante a fringilla. Etiam porta placerat accumsan. In sit amet vehicula metus. Nullam aliquet nisi at urna fermentum, nec elementum nulla consequat. <img src="http://www.stevensegallery.com/200/200" alt="Steven Segallery" /> Vivamus aliquet placerat enim, id feugiat lorem. Vivamus molestie feugiat nulla sit amet faucibus.</p>
-                <footer></footer>
+                <p>Etiam vitae vehicula ante. Pellentesque eu finibus ante. Curabitur sollicitudin quam rhoncus neque ornare porta. Aenean viverra magna nec dolor convallis tristique. In iaculis placerat nisi vitae luctus. Nulla dictum, nisi eget pellentesque vulputate, enim mauris condimentum massa, sit amet faucibus leo nisl et urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed commodo iaculis quam, nec volutpat nisi elementum iaculis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean malesuada, velit nec dignissim facilisis, ipsum enim condimentum nulla, ut imperdiet nibh nisi at urna. Pellentesque venenatis urna ultricies suscipit tincidunt. Mauris et commodo massa. Phasellus tincidunt purus eu est ultricies blandit ac condimentum leo. Quisque consectetur congue risus ac consectetur. Aenean pretium in est sed dictum.</p>
+                <p>Proin efficitur vestibulum laoreet. Nam ac mollis neque. Aliquam feugiat ut velit egestas auctor. Aliquam erat volutpat. Donec sed rhoncus neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam consequat felis eu urna efficitur, sed dignissim libero molestie.</p>
+                <footer><span class=".pubdate">Opublikowane: <span class=".date">2077-10-20</span></span><span class=".tags"><span class=".tag">Bar</span><span class=".tag">Baz</span></span>
+                </footer>
             </article>
             <article>
                 <header>
@@ -85,30 +93,39 @@
                 </table>
                 <p>In justo neque, tincidunt eu vulputate a, molestie non leo.</p>
                 <p>Cras non sem dolor. Etiam dapibus tempus dui, vel lobortis magna eleifend ac. Mauris vulputate suscipit nisi a mattis. Etiam sed vehicula leo, non accumsan neque. Integer laoreet, quam non maximus mollis, velit lorem lacinia odio, at auctor sapien nunc nec sem. Quisque vel rutrum sapien. Vestibulum vitae risus suscipit, commodo nisi ut, sodales felis. Maecenas egestas velit sed nunc congue euismod. Donec pretium commodo tempus. Proin malesuada nibh sed augue semper bibendum. Aenean vel quam nibh. Suspendisse a felis ut neque finibus cursus eget nec diam. Suspendisse id congue tellus.</p>
-                <footer></footer>
+                <footer><span class=".pubdate">Opublikowane: <span class=".date">2077-09-30</span></span><span class=".tags"><span class=".tag">Foo</span><span class=".tag">Baz</span></span>
+                </footer>
             </article>
+            <div class="showmore"><a href="#">Pokaż więcej...</a></div>
         </section>
-        <aside>
-            <h4>Reklama</h4>
-            <div>Reklama #1</div>
-            <div>Reklama #2</div>
-            <div>Reklama #3</div>
-            <div>Reklama #4</div>
-        </aside>
-        <aside>
-            <h4>Nestletter</h4>
-            <form>
-                <fieldset>
-                    <legend>Nie przegap nowości!</legend>
-                    <label for="nl_email">E-mail</label>
-                    <input id="nl_email" type="email" value="" placeholder="Twój e-mail" />
-                    <input type="submit" value="Zapisz mnie" />
-                </fieldset>
-            </form>
-        </aside>
+        <section>
+            <aside>
+                <h4>Reklama</h4>
+                <div>Reklama #1</div>
+                <div>Reklama #2</div>
+                <div>Reklama #3</div>
+                <div>Reklama #4</div>
+            </aside>
+            <aside>
+                <h4>Nestletter</h4>
+                <form>
+                    <fieldset>
+                        <legend>Nie przegap nowości!</legend>
+                        <label for="nl_email">E-mail</label>
+                        <input id="nl_email" type="email" value="" placeholder="Twój e-mail" />
+                        <input type="submit" value="Zapisz mnie" />
+                    </fieldset>
+                </form>
+            </aside>
+        </section>
     </main>
     <footer>
-        <p>Nulla feugiat sodales tortor ac luctus. Phasellus quis luctus nulla. Suspendisse potenti. Etiam nec ipsum dui. Ut semper nec neque eu varius. Curabitur et viverra nibh. Morbi rhoncus venenatis arcu posuere volutpat. Pellentesque volutpat pulvinar nibh, eu vestibulum velit ullamcorper sed. Nulla laoreet, sem vitae convallis iaculis, diam quam sodales velit, at tristique nisi nisi condimentum tortor. Suspendisse mauris ligula, accumsan sed venenatis in, vehicula gravida turpis. Sed quis sagittis nisl. Sed dapibus lobortis lobortis. Donec mattis placerat facilisis. Nam at libero auctor sapien facilisis blandit.</p>
+        <p>Nulla feugiat sodales tortor ac luctus. Phasellus quis luctus nulla. Suspendisse potenti. Etiam nec ipsum dui. Ut semper nec neque eu varius. Curabitur et viverra nibh. Morbi rhoncus venenatis arcu posuere volutpat.</p>
+        <div class="copyright">Copyright &copy; 2016 Artur Czajka</div>
+        <div class="copyright">
+            <p>Fraxinus excelsior, przekrój styczny przez drewno jesiona wyniosłego, CC-SA, Beentree 2008 (via Wikimedia)</p>
+            <p>Fill Murray, Place Cage, Steven SeGALLERY by @davecowart</p>
+        </div>
     </footer>
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
