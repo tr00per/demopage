@@ -109,11 +109,13 @@
             </aside>
             <aside>
                 <h4>Nestletter</h4>
-                <form method="post" action="http://google.pl/newsletter/subscribe">
+                <form method="post" action="https://posttestserver.com/post.php?dir=sda" enctype="multipart/form-data">
                     <fieldset>
                         <legend>Nie przegap nowości!</legend>
                         <label for="nl_email">E-mail</label>
-                        <input id="nl_email" type="email" value="" placeholder="Twój e-mail" />
+                        <input id="nl_email" name="nl_email" type="email" value="" placeholder="Twój e-mail" />
+                        <label for="nl_photo">Awatar</label>
+                        <input id="nl_photo" name="nl_photo" type="file" />
                         <input type="submit" value="Zapisz mnie" />
                     </fieldset>
                 </form>

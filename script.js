@@ -23,6 +23,8 @@
 
         let coverup = document.querySelector("#curtain");
         coverup.addEventListener("click", closeCurtain(coverup), true);
+
+        document.querySelectorAll('a[href^="https://"]').forEach(elem => elem.style.backgroundColor="yellow")
     }
 
     function closeCurtain(curtain) {
